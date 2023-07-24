@@ -54,12 +54,12 @@ function ProductDetails() {
   const { title, image, description, price, rating, count } = product;
   return (
     <main>
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center lg:flex-row flex-col">
         <div className="p-5">
           <div className="border-2 py-12 px-3">
-            <img src={image} alt="" className="max-w-[450px] h-auto" />
+            <img src={image} alt="" className="lg:max-w-[380px]  h-auto" />
           </div>
-          <div className="flex my-4 justify-evenly">
+          <div className="flex my-4 justify-evenly flex-wrap">
             <img
               src={image}
               alt=""
@@ -82,8 +82,10 @@ function ProductDetails() {
             />
           </div>
         </div>
-        <div className="ml-6 px-32">
-          <h2 className="font-bold text-[30px]">{title}</h2>
+        <div className="ml-6 md:px-14 xl:px-32 px-none">
+          <h2 className="font-bold text-[20px] md:text-[30px] text-center md:text-none ">
+            {title}
+          </h2>
           <p>{description}</p>
           <div className="flex my-2">
             <StarRating rating={rating.rate} />(<p>{rating.count}</p>)
