@@ -10,7 +10,7 @@ function Product({ product }) {
     setIsliked(!isLiked);
   };
   return (
-    <div>
+    <div className="px-8 md:px-0">
       <div className="border border-gray-200 h-[300px] mb-4 relative overflow-hidden group  transition">
         <div className="w-full h-full flex items-center justify-center">
           {/* image */}

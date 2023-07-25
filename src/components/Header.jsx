@@ -55,7 +55,7 @@ function Header() {
             </p>
           </div>
           <div className="flex justify-between md:mr-[50px] ml-[50px]">
-            <p className="mr-[10px] flex items-center">
+            <p className="mr-[45px] md:mr-[10px] flex items-center">
               <span className="text-[12px] mr-4">Eng</span>{" "}
               <IoIosArrowDown className="mt-1" />
             </p>
@@ -69,7 +69,6 @@ function Header() {
           <Link
             to="/"
             className="flex text-[26px] items-center font-bold text-green-950"
-            onClick={clearSearch}
           >
             <TiShoppingCart />
             <h1 to="/" className="text-[24px]">
